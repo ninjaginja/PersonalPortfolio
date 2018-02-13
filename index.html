@@ -25,12 +25,21 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">MW</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+
+      <ul id="nav-fullscreen" class="brand-logo center">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Get in Touch</a></li>
+      </ul>
+      <ul id="social-icon-nav" class="brand-logo right">
+        <li><a href="#"><img src="assets/images/github-icon.png" width="30px;" style="margin-top: 10px;"></a></li>
+        <li><a href="#"><img src="assets/images/linkedin-icon.png" width="30px;" style="margin-top: 10px;"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Get in Touch</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -39,7 +48,7 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot highlight">
       <div class="container front-main">
-        <h1 class="header center" id="name-header">Molly Wojcik</h1>
+        <h1 class="header center" id="name-header"><span style="color: #ffffff;">Hello, I'm </span>Molly Wojcik.</h1>
         <div class="row center" id="subheader">
           <h5 class="header col s12 light">Full-Stack Web Developer</h5>
           <i class="small material-icons">import_export</i>
@@ -52,14 +61,53 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/bricks.jpeg" alt="bricks background" style="max-width: 1600px;"></div>
+    <!-- Bricks background -->
+    <!-- <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/bricks.jpeg" alt="bricks background"></div> -->
+
+    <!-- Mountains background -->
+    <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/mountains.jpeg" alt="bricks background"></div>
   </div>
 
 
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h2>About Me</h2>
+          <p class="left-align light">I am a full-stack web developer with an extensive marketing background. My spark and greatest aptitude is rooted in using technology to solve problems. I’m able to blend my deep understanding of strategic business objectives with agile coding knowledge and skills, allowing me to deliver solutions that achieve real business outcomes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light" id="img-text-overlay">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/trees-orange.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <!-- Header for Portfolio -->
+      <div class="row">
+        <div class="col s12 m12">
+          <h2 id="my-work-header">Projects</h2>
+        </div>
+      </div>
+
+      <!--   Portfolio Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -86,32 +134,6 @@
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
 
@@ -161,7 +183,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="#">Materialize</a>
+      © 2018 Molly Wojcik
       </div>
     </div>
   </footer>
