@@ -1,10 +1,4 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
 nav ul a,
 nav .brand-logo {
@@ -21,13 +15,6 @@ p {
   font-family: 'Open Sans', Sans-Serif;
   font-size: 15px;
 }
-
-/* Pink h1
-h1 {
-  color: #E91E63;
-  font-family: 'Raleway', Sans-Serif;
-  font-size: 58px;
-} */
 
 h1 {
   color: #ffffff;
@@ -51,8 +38,10 @@ h5 {
   font-weight: 600;
 }
 
-#img-text-overlay {
+.img-text-overlay {
   color: #ffffff;
+  position: relative;
+  line-height: 40px;
 }
 
 .brand-logo {
@@ -80,16 +69,6 @@ h5 {
   position: absolute;
 }
 
-/* .highlight {
-  background-image: url('../images/brush-stroke-1.png');
-  background-repeat: no-repeat;
-  /* background-size: 1050px 502px; */
-  /* background-size: 65%; */
-  /* background-position: center; */
-  /* padding: 300px; */
-  /* position: relative; */
-/* } */
-
 #logo-container {
   color: #EF5350 !important;
 }
@@ -107,28 +86,29 @@ h5 {
   color: #ffffff;
 }
 
+#bio-image {
+  max-height: 250px;
+  padding-right: 20px;
+  float: left;
+}
+
 .material-icons {
   color: #EF5350;
 }
 
 .front-main {
-  padding: 20px;
+  /* padding: 20px; */
+  width: 100%;
 }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.social-icon {
+  width: 30px;
+  margin-top: 17px;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #EF5350;
 }
 
 .icon-block {
@@ -144,4 +124,80 @@ footer.page-footer {
 
 .teal {
   background-color: #EF5350 !important;
+}
+
+#form-container {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+input {
+  color: #004a68 !important;
+}
+
+input:visited {
+  color: #EF5350 !important;
+}
+
+#submit-button {
+  background-color: #ffffff;
+  border: 1px solid #EF5350;
+  color: #EF5350;
+}
+
+#submit-button:hover {
+  background-color: #f7f9fc;
+}
+
+/* MEDIA QUERIES */
+
+/* Styles for tablet */
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 0;
+    padding: 10%
+  }
+
+  #parallax-form {
+    height: 650px;
+  }
+
+  #index-banner .section {
+    top: 0;
+  }
+
+  #nav-fullscreen {
+    display: none;
+  }
+
+  .img-text-overlay {
+    margin-top: 10%;
+  }
+}
+
+/* Styles for mobile */
+@media only screen and (max-width : 600px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 0;
+    padding: 10%;
+  }
+
+  #index-banner .section {
+    top: 0;
+  }
+
+  .social-icon {
+    width: 25px;
+    margin-top: 15px;
+  }
+
+  #name-header {
+    font-size: 32px;
+  }
+
+  .img-text-overlay {
+    margin-top: 25%;
+  }
 }

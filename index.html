@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Molly Wojcik</title>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon-32x32.png" />
+
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
@@ -28,17 +31,17 @@
 
       <ul id="nav-fullscreen" class="brand-logo center">
         <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">My Work</a></li>
         <li><a href="#">Get in Touch</a></li>
       </ul>
       <ul id="social-icon-nav" class="brand-logo right">
-        <li><a href="#"><img src="assets/images/github-icon.png" width="30px;" style="margin-top: 10px;"></a></li>
-        <li><a href="#"><img src="assets/images/linkedin-icon.png" width="30px;" style="margin-top: 10px;"></a></li>
+        <li><a href="#"><img class="social-icon" src="assets/images/github-icon.png"></a></li>
+        <li><a href="#"><img class="social-icon" src="assets/images/linkedin-icon.png"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">My Work</a></li>
         <li><a href="#">Get in Touch</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -48,24 +51,21 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot highlight">
       <div class="container front-main">
-        <h1 class="header center" id="name-header"><span style="color: #ffffff;">Hello, I'm </span>Molly Wojcik.</h1>
+        <h1 class="header center" id="name-header">Hello, I'm Molly Wojcik.</h1>
         <div class="row center" id="subheader">
           <h5 class="header col s12 light">Full-Stack Web Developer</h5>
           <i class="small material-icons">import_export</i>
           <h5 class="header col s12 light">Marketing Engineer</h5>
         </div>
         <div class="row center">
-          <!-- <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> -->
         </div>
         <br><br>
 
       </div>
     </div>
-    <!-- Bricks background -->
-    <!-- <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/bricks.jpeg" alt="bricks background"></div> -->
 
     <!-- Mountains background -->
-    <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/mountains.jpeg" alt="bricks background"></div>
+    <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/mountains.jpeg" alt="mountains background"></div>
   </div>
 
 
@@ -76,7 +76,8 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h2>About Me</h2>
-          <p class="left-align light">I am a full-stack web developer with an extensive marketing background. My spark and greatest aptitude is rooted in using technology to solve problems. I’m able to blend my deep understanding of strategic business objectives with agile coding knowledge and skills, allowing me to deliver solutions that achieve real business outcomes.</p>
+          <p class="left-align light"><img id="bio-image" src="assets/images/Molly-trail-running.jpeg">I am a full-stack web developer with an extensive marketing background. My spark and greatest aptitude is rooted in using technology to solve problems. I’m able to blend my deep understanding of strategic business objectives with agile coding knowledge and skills, allowing me to deliver solutions that achieve real business outcomes.</p>
+          <p class="left-align light">But I'm so much more than my career history. I'm an avid outdoor adventurer with a relentless pursuit for excellence in everything I do. I'm equally driven by the process as much as the end goal. I know I have limitations, but I refuse to accept them. Progress makes me tick. I believe in failing forward. Above all, I wake up each day with a conscious intention to be good to others, take life by the horns and do or make something great!</p>
         </div>
       </div>
 
@@ -91,11 +92,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light" id="img-text-overlay">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light img-text-overlay"><span style="font-size: 50px;">{grit}:</span> firmness of character, indomitable spirit.</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/trees-orange.png" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img class="responsive-img" src="assets/images/trees-orange.png" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -103,36 +104,59 @@
       <!-- Header for Portfolio -->
       <div class="row">
         <div class="col s12 m12">
-          <h2 id="my-work-header">Projects</h2>
+          <h2 id="my-work-header">My Work</h2>
         </div>
       </div>
+
 
       <!--   Portfolio Section   -->
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/TrailBlazer-app.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">TrailBlazer<i class="material-icons right">more_vert</i></span>
+              <p>Responsive geography-based trail finder application for outdoor enthusiasts.</p>
+              <p><a href="https://ninjaginja.github.io/projectOne/" target="_blank">Find Your Trail</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">TrailBlazer<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
           </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
           </div>
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -141,42 +165,66 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper" id="parallax-form">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div class="row center" id="form-container">
+          <h2 class="header col s12 light">Get in Touch</h2>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Message</label>
+              </div>
+            </div>
+            <button class="btn waves-effect waves-light" id="submit-button" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
         </div>
+
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img class="responsive-img" src="assets/images/river-blue.png" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+          <h5 class="white-text">Me in a Nutshell</h5>
+          <p class="grey-text text-lighten-4">I try to be the best version of myself every day, which means being kind to others, challenging myself, giving 200%, and always growing.</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Learn</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">About Me</a></li>
+            <li><a class="white-text" href="#!">My Work</a></li>
+            <li><a class="white-text" href="#!">Resume</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Get in Touch</a></li>
+            <li><a class="white-text" href="#!">Github</a></li>
+            <li><a class="white-text" href="#!">LinkedIn</a></li>
           </ul>
         </div>
       </div>
