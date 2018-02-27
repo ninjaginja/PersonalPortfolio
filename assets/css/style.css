@@ -32,6 +32,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: #EF5350;
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 16px;
+}
+
 h5 {
   color: #004a68;
   font-family: 'Open Sans', Sans-Serif;
@@ -139,6 +145,14 @@ input:visited {
   color: #EF5350 !important;
 }
 
+#resume-button {
+  background-color: #EF5350;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 #submit-button {
   background-color: #ffffff;
   border: 1px solid #EF5350;
@@ -160,7 +174,7 @@ input:visited {
   }
 
   #parallax-form {
-    height: 650px;
+    /* height: 650px; */
   }
 
   #index-banner .section {
