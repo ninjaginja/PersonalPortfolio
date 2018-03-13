@@ -65,7 +65,7 @@
     </div>
 
     <!-- Mountains background -->
-    <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/mountains.jpeg" alt="mountains background"></div>
+    <div id="home-bkgd" class="parallax"><img class="responsive-img" src="assets/images/mountains-tent.jpg" alt="mountains background"></div>
   </div>
 
 
@@ -156,7 +156,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">FriendFinder<i class="material-icons right">more_vert</i></span>
-              <h3>WEB DEVELOPMENT</h3>
+              <h3>FULL-STACK WEB DEVELOPMENT</h3>
               <p>Survey-based, compatibility "FriendFinder" application for our furry friends.</p>
               <p><a href="https://stark-atoll-68154.herokuapp.com/" target="_blank">Find Furry Friend</a></p>
             </div>
@@ -183,7 +183,7 @@
       <div class="container">
         <div class="row center" id="form-container">
           <h2 class="header col s12 light" id="contact">Get in Touch</h2>
-          <form class="col s12" action="mailto:mollywojcik@gmail.com" method="post" enctype="text/plain">
+          <!-- <form class="col s12" action="mailto:mollywojcik@gmail.com?subject=NewFormSubmission" method="post" enctype="text/plain" onsubmit="location.href='index2.html';">
             <div class="row">
               <div class="input-field col s6">
                 <input id="first_name" type="text" class="validate">
@@ -202,16 +202,41 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">Message</label>
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
               </div>
             </div>
             <button class="btn waves-effect waves-light" id="submit-button" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
             </button>
-          </form>
-        </div>
+          </form> -->
 
+        <!-- Embed Wufoo Form -->
+        <div id="wufoo-z11qwss11yyrdjn">
+          Fill out my <a href="https://mollywojcik.wufoo.com/forms/z11qwss11yyrdjn">online form</a>.
+        </div>
+        <!-- <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div> -->
+        <script type="text/javascript">
+          var z11qwss11yyrdjn;(function(d, t) {
+          var s = d.createElement(t), options = {
+            'userName':'mollywojcik',
+            'formHash':'z11qwss11yyrdjn',
+            'autoResize':true,
+            'height':'517',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'hide',
+            'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { z11qwss11yyrdjn = new WufooForm();z11qwss11yyrdjn.initialize(options);z11qwss11yyrdjn.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');
+        </script>
+        <!-- End Embedded Wufoo Form -->
+
+        </div>
       </div>
     </div>
     <div class="parallax"><img class="responsive-img" src="assets/images/river-blue.png" alt="Unsplashed background img 3"></div>

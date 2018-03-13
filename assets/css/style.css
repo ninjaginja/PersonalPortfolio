@@ -145,6 +145,11 @@ input:visited {
   color: #EF5350 !important;
 }
 
+#saveForm {
+  background-color: #EF5350 !important;
+  padding: 10px;
+}
+
 #resume-button {
   background-color: #EF5350;
   color: #ffffff;
